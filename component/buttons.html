@@ -923,7 +923,173 @@ function includeHTML() {
   </h2>
 
   <!-- Description -->
-  
+
+
+  <!-- Description -->
+  <p>Do more with buttons. You can control button states or create groups of buttons for more components like toolbars.
+  </p>
+
+  <!--Subheading-->
+  <h4 id="toggle" class="mt-5"><strong>Toggle states</strong></h4>
+
+  <!--Description-->
+  <p class="description">Add <code>data-toggle="button"</code> to toggle a button’s <code>active</code> state. If
+    you’re pre-toggling a button,
+    you must manually add the <code>.active</code> class <strong>and</strong> the attribute <code>aria-pressed="true"</code> to
+    the <code>&lt;button&gt;</code>.</p>
+
+  <!--Section: Live preview-->
+  <section class="section-preview">
+
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+      Single toggle
+    </button>
+
+  </section>
+  <!--Section: Live preview-->
+
+  <!--Section: Code-->
+  <section>
+
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_faccb7c9c9da9e2b8128e9f7c05e4c7a" role="tab">HTML</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_faccb7c9c9da9e2b8128e9f7c05e4c7a" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;button&quot; aria-pressed=&quot;false&quot; autocomplete=&quot;off&quot;&gt;
+          Single toggle
+        &lt;/button&gt;
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+
+  </section>
+  <!--Section: Code-->
+
+  <!--Subheading-->
+  <h4 id="checkbox-radio" class="mt-5"><strong>Checkbox and radio buttons</strong></h4>
+
+  <!--Description-->
+  <p>Bootstrap’s <code>.button</code> styles can be applied to other elements, such as <code>&lt;label&gt;</code>s,
+    to provide checkbox or radio style button toggling. You just need to add <code>data-toggle="buttons"</code> to a
+    <code>.btn-group</code>
+    containing those modified buttons to enable toggling in their respective styles.</p>
+
+  <p>The checked state for these buttons is <strong>only updated via a <code>click</code> event</strong> on the button.
+    If you use another method to update the input—e.g., with <code>&lt;input type="reset"&gt;</code> or by manually
+    applying the input’s
+    <code>checked</code> property—you’ll need to toggle <code>.active</code> on the <code>&lt;label&gt;</code>
+    manually.</p>
+
+  <p>Note that pre-checked buttons require you to manually add the <code>.active</code> class to the input’s
+    <code>&lt;label&gt;</code>.</p>
+
+
+  <!--Section: Live preview-->
+  <section class="section-preview">
+
+    <div class="btn-group btn-group-toggle d-flex flex-column flex-md-row" data-toggle="buttons">
+      <label class="btn btn-primary active">
+        <input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
+      </label>
+      <label class="btn btn-primary">
+        <input type="checkbox" autocomplete="off"> Checkbox 2
+      </label>
+      <label class="btn btn-primary">
+        <input type="checkbox" autocomplete="off"> Checkbox 3
+      </label>
+    </div>
+
+
+  </section>
+  <!--Section: Live preview-->
+
+  <!--Section: Code-->
+  <section>
+
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_7ed87d0e532e6b270d2debf26cd28641" role="tab">HTML</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_7ed87d0e532e6b270d2debf26cd28641" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+        &lt;div class=&quot;btn-group btn-group-toggle&quot; data-toggle=&quot;buttons&quot;&gt;
+          &lt;label class=&quot;btn btn-primary active&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; checked autocomplete=&quot;off&quot;&gt; Checkbox 1 (pre-checked)
+          &lt;/label&gt;
+          &lt;label class=&quot;btn btn-primary&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; autocomplete=&quot;off&quot;&gt; Checkbox 2
+          &lt;/label&gt;
+          &lt;label class=&quot;btn btn-primary&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; autocomplete=&quot;off&quot;&gt; Checkbox 3
+          &lt;/label&gt;
+        &lt;/div&gt;
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+
+  </section>
+  <!--Section: Code-->
+  <!--Subheading-->
+  <h4 id="checkbox-radio" class="mt-5"><strong>Radio buttons</strong></h4>
+  <!--Section: Live preview-->
+  <section class="section-preview">
+    <div class="btn-group btn-group-toggle d-flex flex-column flex-md-row" data-toggle="buttons">
+      <label class="btn btn-primary form-check-label active">
+        <input class="form-check-input" type="radio" name="options" id="option1" autocomplete="off" checked>
+        Radio 1 (Preselected)
+      </label>
+      <label class="btn btn-primary form-check-label">
+        <input class="form-check-input" type="radio" name="options" id="option2" autocomplete="off"> Radio
+      </label>
+      <label class="btn btn-primary form-check-label">
+        <input class="form-check-input" type="radio" name="options" id="option3" autocomplete="off"> Radio
+      </label>
+    </div>
+
+
+  </section>
+  <!--Section: Live preview-->
+   <!--Section: Code-->
+   <section>
+
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_3d42ac4c0be6d25f0f6fecffef59477f" role="tab">HTML</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_3d42ac4c0be6d25f0f6fecffef59477f" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+        &lt;div class=&quot;btn-group btn-group-toggle&quot; data-toggle=&quot;buttons&quot;&gt;
+          &lt;label class=&quot;btn btn-primary form-check-label active&quot;&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option1&quot; autocomplete=&quot;off&quot; checked&gt;
+            Radio 1 (Preselected)
+          &lt;/label&gt;
+          &lt;label class=&quot;btn btn-primary form-check-label&quot;&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option2&quot; autocomplete=&quot;off&quot;&gt; Radio
+          &lt;/label&gt;
+          &lt;label class=&quot;btn btn-primary form-check-label&quot;&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option3&quot; autocomplete=&quot;off&quot;&gt; Radio
+          &lt;/label&gt;
+        &lt;/div&gt;
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+
+  </section>
+  <!--Section: Code-->
+
+
+  <!--Subheading-->
+  <h4 id="methods" class="mt-5"><strong>Methods</strong></h4>
+
+  <!--Description-->
+  <p class="description"></p>
+
+  <table class="table table-bordered" style="border-top:1px solid #dee2e6;">
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code class="highlighter-rouge">$().button('toggle')</code></td>
+        <td>Toggles the push state. Gives the button the appearance that it has been activated.</td>
+      </tr>
+      <tr>
+        <td><code class="highlighter-rouge">$().button('disponse')</code></td>
+        <td>Destroys an element’s button.</td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
+<!--Section: Code-->
+
+
+</section>
+<!--/Section: -->  
 <div w3-include-html="https://yayanheeh.github.io/garangan-bootstrap/footer.html"></div> 
 
 <script>

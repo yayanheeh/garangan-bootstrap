@@ -32,7 +32,1125 @@ function includeHTML() {
 <body>
 
 <div w3-include-html="https://yayanheeh.github.io/garangan-bootstrap/header.html"></div> 
+<!--Title-->
+  <h2 class="primary-heading">Button group</h2>
 
+  <h1 class="secondary-heading mb-4">Bootstrap Button Group</h1>
+
+  <!--Description-->
+  <p>Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.
+  </p>
+
+  <p>Examples of Bootstrap button group use:</p>
+
+  <ul>
+    <li>Group of pricing options</li>
+    <li>Group of licenses you can see on our <a href="https://mdbootstrap.com/products/jquery-ui-kit/">MDB
+        Pro page</a></li>
+  </ul>
+
+  <p class="mb-5">Take a look at the following button groups examples:</p>
+
+</section>
+<!--/Section: Intro-->
+
+<hr class="mt-4 mb-5">
+
+<!--Section: -->
+<section id="basic">
+
+  <!--Title-->
+  <h2 class="section-heading mb-4">
+    Basic example
+  </h2>
+
+  <!-- Description -->
+  <p>Wrap a series of buttons within the <code>.btn-group</code>. Add in optional JavaScript radio and
+    checkbox style behavior with <a href="https://mdbootstrap.com/docs/jquery/components/buttons/#button-plugin">our
+      buttons plugin</a>.
+  </p>
+
+  <!--Section: Live preview-->
+  <section class="section-preview">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12">
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary p-demo-4">Left</button>
+          <button type="button" class="btn btn-primary p-demo-4">Middle</button>
+          <button type="button" class="btn btn-primary p-demo-4">Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+  </section>
+  <!--Section: Live preview-->
+
+  <!--Section: Code-->
+  <section>
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_b0ec2275aa456431a14e7679f9775716" role="tab">HTML</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_b0ec2275aa456431a14e7679f9775716" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+
+        &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+
+
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+  </section>
+  <!--Section: Code-->
+
+
+  <blockquote class="blockquote bq-warning">
+    <p class="bq-title">Ensure the correct <code>role</code> and provide a label</p>
+    <p>In order for assistive technologies (such as screen readers) to convey that a series of buttons are grouped, an
+      appropriate role attribute needs to be provided. For button groups, this would be <code>role="group"</code>,
+      while toolbars
+      should have a <code>role="toolbar"</code>.</p>
+    <p>In addition, groups and toolbars should be given an explicit label, as most assistive technologies will
+      otherwise not announce them, despite the presence of the correct role attribute. In the examples provided here,
+      we use <code>aria-label</code>, but alternatives such as <code>aria-labelledby</code> may also be used.
+    </p>
+  </blockquote>
+
+</section>
+<!--/Section: -->
+<hr class="mt-4 mb-5">
+
+<!--Section: -->
+<section id="toolbar">
+
+  <!--Title-->
+  <h2 class="section-heading mb-4">
+    Button toolbar
+  </h2>
+
+  <!-- Description -->
+  <p>You can also combine sets of button groups into button toolbars for more complex components. To do this, use
+    utility classes as needed to
+    space out groups, buttons, and more.
+  </p>
+
+  <!--Section: Live preview-->
+  <section class="section-preview">
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12">
+
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group mr-2 mb-3 mb-md-0" role="group" aria-label="First group">
+            <button type="button" class="btn btn-default p-demo-5">1</button>
+            <button type="button" class="btn btn-default p-demo-5">2</button>
+            <button type="button" class="btn btn-default p-demo-5">3</button>
+            <button type="button" class="btn btn-default p-demo-5">4</button>
+          </div>
+          <div class="btn-group mr-2 mb-3 mb-md-0" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-default p-demo-5">5</button>
+            <button type="button" class="btn btn-default p-demo-5">6</button>
+            <button type="button" class="btn btn-default p-demo-5">7</button>
+          </div>
+          <div class="btn-group mb-3 mb-md-0" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-default p-demo-5">8</button>
+          </div>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!--Section: Live preview-->
+
+  <!--Section: Code-->
+  <section>
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_19aa8054cc7eca6906820823b30da68a" role="tab">HTML</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_19aa8054cc7eca6906820823b30da68a" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+
+        &lt;div class=&quot;btn-toolbar&quot; role=&quot;toolbar&quot; aria-label=&quot;Toolbar with button groups&quot;&gt;
+          &lt;div class=&quot;btn-group mr-2&quot; role=&quot;group&quot; aria-label=&quot;First group&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;1&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;2&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;3&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;4&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group mr-2&quot; role=&quot;group&quot; aria-label=&quot;Second group&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;5&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;6&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;7&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Third group&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;8&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+  </section>
+  <!--Section: Code-->
+
+  <!-- Description -->
+  <p>Feel free to mix input groups with button groups in your toolbars. Similar to the example above, you’ll likely need
+    some utilities though to space things properly.
+  </p>
+
+  <!--Section section-preview-->
+  <section class="section-preview">
+
+    <!-- Grid row -->
+    <div class="flex-row mb-3">
+
+      <!-- Grid column -->
+
+      <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-default">1</button>
+          <button type="button" class="btn btn-default">2</button>
+          <button type="button" class="btn btn-default">3</button>
+          <button type="button" class="btn btn-default">4</button>
+        </div>
+        <div class="md-form input-group my-0">
+          <div class="input-group-prepend">
+            <div class="input-group-text md-addon" id="btnGroupAddon">@</div>
+          </div>
+          <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example"
+            aria-describedby="btnGroupAddon">
+        </div>
+      </div>
+
+
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+    <!-- Grid row -->
+    <div class="flex-row mb-3">
+
+      <!-- Grid column -->
+
+      <div class="btn-toolbar d-flex" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-auto mb-3 mb-md-0" role="group" aria-label="First group">
+          <button type="button" class="btn btn-default p-demo-5">1</button>
+          <button type="button" class="btn btn-default p-demo-5">2</button>
+          <button type="button" class="btn btn-default p-demo-5">3</button>
+          <button type="button" class="btn btn-default p-demo-5">4</button>
+        </div>
+        <div class="md-form input-group mb-3 my-0">
+          <div class="input-group-prepend">
+            <span class="input-group-text md-addon" id="material-addon1">@</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+            aria-describedby="material-addon1">
+        </div>
+      </div>
+
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+  </section>
+  <!--Section section-preview-->
+
+  <!--Section: Code-->
+  <section>
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_8466020acffa1856cd3136c28ba5cb14" role="tab">HTML</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_8466020acffa1856cd3136c28ba5cb14" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+
+        &lt;!-- Grid row --&gt;
+    &lt;div class=&quot;flex-row mb-3&quot;&gt;
+
+      &lt;!-- Grid column --&gt;
+
+        &lt;div class=&quot;btn-toolbar mb-3&quot; role=&quot;toolbar&quot; aria-label=&quot;Toolbar with button groups&quot;&gt;
+          &lt;div class=&quot;btn-group mr-2&quot; role=&quot;group&quot; aria-label=&quot;First group&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;1&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;2&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;3&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;4&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;md-form input-group my-0&quot;&gt;
+            &lt;div class=&quot;input-group-prepend&quot;&gt;
+              &lt;div class=&quot;input-group-text md-addon&quot; id=&quot;btnGroupAddon&quot;&gt;@&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Input group example&quot; aria-label=&quot;Input group example&quot; aria-describedby=&quot;btnGroupAddon&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+
+      &lt;!-- Grid column --&gt;
+
+    &lt;/div&gt;
+    &lt;!-- Grid row --&gt;
+
+    &lt;!-- Grid row --&gt;
+    &lt;div class=&quot;flex-row mb-3&quot;&gt;
+
+      &lt;!-- Grid column --&gt;
+
+        &lt;div class=&quot;btn-toolbar d-flex&quot; role=&quot;toolbar&quot; aria-label=&quot;Toolbar with button groups&quot;&gt;
+          &lt;div class=&quot;btn-group mr-auto mb-3 mb-md-0&quot; role=&quot;group&quot; aria-label=&quot;First group&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default p-demo-5&quot;&gt;1&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default p-demo-5&quot;&gt;2&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default p-demo-5&quot;&gt;3&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-default p-demo-5&quot;&gt;4&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;md-form input-group mb-3 my-0&quot;&gt;
+            &lt;div class=&quot;input-group-prepend&quot;&gt;
+              &lt;span class=&quot;input-group-text md-addon&quot; id=&quot;material-addon1&quot;&gt;@&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot;
+              aria-describedby=&quot;material-addon1&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      &lt;!-- Grid column --&gt;
+
+    &lt;/div&gt;
+    &lt;!-- Grid row --&gt;
+
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+  </section>
+  <!--Section: Code-->
+
+</section>
+<!--/Section: -->
+
+<hr class="mt-4 mb-5">
+
+<!--Section: -->
+<section id="sizing">
+
+  <!--Title-->
+  <h2 class="section-heading mb-4">
+    Sizing
+  </h2>
+
+  <!-- Description -->
+  <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to each
+    <code>.btn-group</code>,
+    including each one when nesting multiple groups.
+  </p>
+
+  <!--Section: Live preview-->
+  <section class="section-preview">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 mb-4">
+
+        <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-unique btn-lg p-demo-3">Left</button>
+          <button type="button" class="btn btn-unique btn-lg p-demo-3">Middle</button>
+          <button type="button" class="btn btn-unique btn-lg p-demo-3">Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-12 mb-4">
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-unique p-demo-3">Left</button>
+          <button type="button" class="btn btn-unique p-demo-3">Middle</button>
+          <button type="button" class="btn btn-unique p-demo-3">Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-12">
+
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-unique btn-sm p-demo-3">Left</button>
+          <button type="button" class="btn btn-unique btn-sm p-demo-3">Middle</button>
+          <button type="button" class="btn btn-unique btn-sm p-demo-3">Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+
+  </section>
+  <!--Section: Live preview-->
+
+  <!--Section: Code-->
+  <section>
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_1790c19108cfa10660dca2a8b24b5f7b" role="tab">HTML</a></li><li class="nav-item"><a class="nav-link " data-toggle="tab" href="#mdb_bfa191aad64a03b21eb488e4acb3ad9d" role="tab">CSS</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_1790c19108cfa10660dca2a8b24b5f7b" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+
+        &lt;div class=&quot;btn-group btn-group-lg&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-unique btn-lg&quot;&gt;Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-unique btn-lg&quot;&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-unique btn-lg&quot;&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-unique&quot;&gt;Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-unique&quot;&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-unique&quot;&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn-group btn-group-sm&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-unique btn-sm&quot;&gt;Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-unique btn-sm&quot;&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-unique btn-sm&quot;&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+
+
+      </pre></code></div><div class="tab-pane fade " id="mdb_bfa191aad64a03b21eb488e4acb3ad9d" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-css" ><code>
+
+        .btn-group-lg .btn, .btn-group-sm .btn {
+        border-radius: 2px;
+        }
+
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+  </section>
+  <!--Section: Code-->
+
+</section>
+<!--/Section: -->
+
+<hr class="mt-4 mb-5">
+
+<!--Section: -->
+<section id="nesting">
+
+  <!--Title-->
+  <h2 class="section-heading mb-4">
+    Nesting
+  </h2>
+
+  <!-- Description -->
+  <p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a
+    series of buttons.
+  </p>
+
+  <!--Section: Live preview-->
+  <section class="section-preview">
+
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <button type="button" class="btn btn-info p-demo-5">1</button>
+      <button type="button" class="btn btn-info p-demo-5">2</button>
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle p-demo-3" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <a class="dropdown-item" href="#">Dropdown link</a>
+          <a class="dropdown-item" href="#">Dropdown link</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--Section: Live preview-->
+
+  <!--Section: Code-->
+  <section>
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_78ffbfc9dd5a88d6bb1b2c158b5e5cb3" role="tab">HTML</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_78ffbfc9dd5a88d6bb1b2c158b5e5cb3" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+
+        &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Button group with nested dropdown&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;1&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;2&lt;/button&gt;
+          &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+            &lt;button id=&quot;btnGroupDrop1&quot; type=&quot;button&quot; class=&quot;btn btn-info dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+              Dropdown
+            &lt;/button&gt;
+            &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupDrop1&quot;&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+  </section>
+  <!--Section: Code-->
+
+</section>
+<!--/Section: -->
+
+<hr class="mt-4 mb-5">
+
+<!--Section: -->
+<section id="vertical">
+
+  <!--Title-->
+  <h2 class="section-heading mb-4">
+    Vertical variation
+  </h2>
+
+  <!-- Description -->
+  <p>Make a set of buttons appear vertically stacked rather than horizontally. <strong>Split button dropdowns are not
+      supported
+      here.</strong>
+  </p>
+
+  <!--Section: Live preview-->
+  <section class="section-preview">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-xl-2 col-lg-3 col-md-4 mb-md-0 mb-4">
+
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+          <button type="button" class="btn btn-amber mb-0">Button</button>
+          <button type="button" class="btn btn-amber mb-0">Button</button>
+          <button type="button" class="btn btn-amber mb-0">Button</button>
+          <button type="button" class="btn btn-amber mb-0">Button</button>
+          <button type="button" class="btn btn-amber mb-0">Button</button>
+          <button type="button" class="btn btn-amber">Button</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-xl-2 col-lg-3 col-md-4">
+
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+          <button type="button" class="btn btn-indigo mb-0 ml-0">Button</button>
+          <button type="button" class="btn btn-indigo mb-0 ml-0">Button</button>
+          <div class="btn-group" role="group">
+            <button id="btnGroupVerticalDrop1" type="button" class="btn btn-indigo dropdown-toggle"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+          </div>
+          <button type="button" class="btn btn-indigo mb-0 ml-0">Button</button>
+          <button type="button" class="btn btn-indigo mb-0 ml-0">Button</button>
+          <div class="btn-group" role="group">
+            <button id="btnGroupVerticalDrop2" type="button" class="btn btn-indigo dropdown-toggle"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+          </div>
+          <div class="btn-group" role="group">
+            <button id="btnGroupVerticalDrop3" type="button" class="btn btn-indigo dropdown-toggle"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+          </div>
+          <div class="btn-group" role="group">
+            <button id="btnGroupVerticalDrop4" type="button" class="btn btn-indigo dropdown-toggle"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!--Section: Live preview-->
+
+  <!--Section: Code-->
+  <section>
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_9f7944e901be9bdd85a1624d7287dbcd" role="tab">HTML</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_9f7944e901be9bdd85a1624d7287dbcd" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+
+        &lt;div class=&quot;btn-group-vertical&quot; role=&quot;group&quot; aria-label=&quot;Vertical button group&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-amber&quot;&gt;Button&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-amber&quot;&gt;Button&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-amber&quot;&gt;Button&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-amber&quot;&gt;Button&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-amber&quot;&gt;Button&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-amber&quot;&gt;Button&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn-group-vertical&quot; role=&quot;group&quot; aria-label=&quot;Vertical button group&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-indigo ml-0&quot;&gt;Button&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-indigo ml-0&quot;&gt;Button&lt;/button&gt;
+          &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+            &lt;button id=&quot;btnGroupVerticalDrop1&quot; type=&quot;button&quot; class=&quot;btn btn-indigo dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+              Dropdown
+            &lt;/button&gt;
+            &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupVerticalDrop1&quot;&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-indigo ml-0&quot;&gt;Button&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-indigo ml-0&quot;&gt;Button&lt;/button&gt;
+          &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+            &lt;button id=&quot;btnGroupVerticalDrop2&quot; type=&quot;button&quot; class=&quot;btn btn-indigo dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+              Dropdown
+            &lt;/button&gt;
+            &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupVerticalDrop2&quot;&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+            &lt;button id=&quot;btnGroupVerticalDrop3&quot; type=&quot;button&quot; class=&quot;btn btn-indigo dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+              Dropdown
+            &lt;/button&gt;
+            &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupVerticalDrop3&quot;&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn-group&quot; role=&quot;group&quot;&gt;
+            &lt;button id=&quot;btnGroupVerticalDrop4&quot; type=&quot;button&quot; class=&quot;btn btn-indigo dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;
+              aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+              Dropdown
+            &lt;/button&gt;
+            &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;btnGroupVerticalDrop4&quot;&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;
+              &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+  </section>
+  <!--Section: Code-->
+
+</section>
+<!--/Section: -->
+
+<hr class="mt-4 mb-5">
+
+<!--Section: -->
+<section id="checkbox">
+
+  <!--Title-->
+  <h2 class="section-heading mb-4">
+    Checkbox and radio button group <a href="https://mdbootstrap.com/products/jquery-ui-kit/" target="_blank"
+      class="btn btn-danger btn-sm" role="button">MDB Pro component
+      <i class="far fa-gem ml-1"></i>
+    </a>
+  </h2>
+
+  <!-- Description -->
+  <p>
+  </p>
+
+  <!--Section: Live preview-->
+  <section class="section-preview">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 mb-4">
+
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-mdb-color form-check-label active p-demo-2">
+            <input class="form-check-input" type="checkbox" checked autocomplete="off"> Pre-checked
+          </label>
+          <label class="btn btn-mdb-color form-check-label p-demo-2">
+            <input class="form-check-input" type="checkbox" autocomplete="off"> Check
+          </label>
+          <label class="btn btn-mdb-color form-check-label p-demo-2">
+            <input class="form-check-input" type="checkbox" autocomplete="off"> Check
+          </label>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-12">
+
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-light-blue form-check-label active p-demo-2">
+            <input class="form-check-input" type="radio" name="options" id="option1" autocomplete="off" checked>
+            Preselected
+          </label>
+          <label class="btn btn-light-blue form-check-label p-demo-2">
+            <input class="form-check-input" type="radio" name="options" id="option2" autocomplete="off"> Radio
+          </label>
+          <label class="btn btn-light-blue form-check-label p-demo-2">
+            <input class="form-check-input" type="radio" name="options" id="option3" autocomplete="off"> Radio
+          </label>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!--Section: Live preview-->
+
+  <!--Section: Code-->
+  <section>
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_ee740906f860f24101ab5d7cc9761823" role="tab">HTML</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_ee740906f860f24101ab5d7cc9761823" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+
+        &lt;div class=&quot;btn-group&quot; data-toggle=&quot;buttons&quot;&gt;
+          &lt;label class=&quot;btn btn-mdb-color form-check-label active&quot;&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; checked autocomplete=&quot;off&quot;&gt; Pre-checked
+          &lt;/label&gt;
+          &lt;label class=&quot;btn btn-mdb-color form-check-label&quot;&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; autocomplete=&quot;off&quot;&gt; Check
+          &lt;/label&gt;
+          &lt;label class=&quot;btn btn-mdb-color form-check-label&quot;&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; autocomplete=&quot;off&quot;&gt; Check
+          &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn-group&quot; data-toggle=&quot;buttons&quot;&gt;
+          &lt;label class=&quot;btn btn-light-blue form-check-label active&quot;&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option1&quot; autocomplete=&quot;off&quot; checked&gt;
+            Preselected
+          &lt;/label&gt;
+          &lt;label class=&quot;btn btn-light-blue form-check-label&quot;&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option2&quot; autocomplete=&quot;off&quot;&gt; Radio
+          &lt;/label&gt;
+          &lt;label class=&quot;btn btn-light-blue form-check-label&quot;&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;options&quot; id=&quot;option3&quot; autocomplete=&quot;off&quot;&gt; Radio
+          &lt;/label&gt;
+        &lt;/div&gt;
+
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+  </section>
+  <!--Section: Code-->
+
+</section>
+<!--/Section: -->
+
+<hr class="mt-4 mb-5">
+
+<!--Section: -->
+<section id="rounded">
+
+  <!--Title-->
+  <h2 class="section-heading mb-4">
+    Rounded button group <a href="https://mdbootstrap.com/products/jquery-ui-kit/" target="_blank"
+      class="btn btn-danger btn-sm" role="button">MDB Pro component
+      <i class="far fa-gem ml-1"></i>
+    </a>
+  </h2>
+
+  <!-- Description -->
+  <p>
+  </p>
+
+  <!--Section: Live preview-->
+  <section class="section-preview">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 mb-4">
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-pink btn-rounded p-demo-4">Left</button>
+          <button type="button" class="btn btn-pink btn-rounded p-demo-4">Middle</button>
+          <button type="button" class="btn btn-pink btn-rounded p-demo-4">Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-12 mb-4">
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn purple-gradient btn-rounded p-demo-4">Left</button>
+          <button type="button" class="btn purple-gradient btn-rounded p-demo-4">Middle</button>
+          <button type="button" class="btn purple-gradient btn-rounded p-demo-4">Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-12 mb-4">
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-purple btn-rounded p-demo-1"><i class="fas fa-star fa-sm pr-2"
+              aria-hidden="true"></i>
+            Left</button>
+          <button type="button" class="btn btn-purple btn-rounded p-demo-1"><i class="fas fa-heart fa-sm pr-2"
+              aria-hidden="true"></i>Middle</button>
+          <button type="button" class="btn btn-purple btn-rounded p-demo-1"><i class="fas fa-user fa-sm pr-2"
+              aria-hidden="true"></i>Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-12">
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-outline-deep-purple btn-rounded waves-effect p-demo-0"><i
+              class="fas fa-anchor fa-sm pr-2" aria-hidden="true"></i> Left</button>
+          <button type="button" class="btn btn-outline-deep-purple btn-rounded waves-effect p-demo-0"><i
+              class="far fa-sun fa-sm pr-2" aria-hidden="true"></i>Middle</button>
+          <button type="button" class="btn btn-outline-deep-purple btn-rounded waves-effect p-demo-0"><i
+              class="fas fa-user-secret fa-sm pr-2" aria-hidden="true"></i>Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!--Section: Live preview-->
+
+  <!--Section: Code-->
+  <section>
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_3c95fe304c24cdd1f45e86c5ad4d300f" role="tab">HTML</a></li><li class="nav-item"><a class="nav-link " data-toggle="tab" href="#mdb_7b10dea43914533c8063c9f0fdb16f81" role="tab">CSS</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_3c95fe304c24cdd1f45e86c5ad4d300f" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+
+        &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-pink btn-rounded&quot;&gt;Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-pink btn-rounded&quot;&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-pink btn-rounded&quot;&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn purple-gradient btn-rounded&quot;&gt;Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn purple-gradient btn-rounded&quot;&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn purple-gradient btn-rounded&quot;&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-purple btn-rounded&quot;&gt;&lt;i class=&quot;fas fa-star fa-sm pr-2&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+            Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-purple btn-rounded&quot;&gt;&lt;i class=&quot;fas fa-heart fa-sm pr-2&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-purple btn-rounded&quot;&gt;&lt;i class=&quot;fas fa-user fa-sm pr-2&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-deep-purple btn-rounded waves-effect&quot;&gt;&lt;i class=&quot;fas fa-anchor fa-sm pr-2&quot;
+              aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-deep-purple btn-rounded waves-effect&quot;&gt;&lt;i class=&quot;far fa-sun fa-sm pr-2&quot;
+              aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-deep-purple btn-rounded waves-effect&quot;&gt;&lt;i class=&quot;fas fa-user-secret fa-sm pr-2&quot;
+              aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+
+      </pre></code></div><div class="tab-pane fade " id="mdb_7b10dea43914533c8063c9f0fdb16f81" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-css" ><code>
+
+        .btn .fa.fa-sm {
+        font-size: 1rem;
+        margin-top: -5px;
+        }
+
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+  </section>
+  <!--Section: Code-->
+
+</section>
+<!--/Section: -->
+
+<hr class="mt-4 mb-5">
+
+<!--Section: -->
+<section id="additional">
+
+  <!--Title-->
+  <h2 class="section-heading mb-4">
+    Additional button group
+  </h2>
+
+  <!-- Description -->
+  <p>
+  </p>
+
+  <!--Section: Live preview-->
+  <section class="section-preview">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 mb-4">
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-cyan p-demo-4">Left</button>
+          <button type="button" class="btn btn-cyan p-demo-4">Middle</button>
+          <button type="button" class="btn btn-cyan p-demo-4">Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-12 mb-4">
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn aqua-gradient p-demo-4">Left</button>
+          <button type="button" class="btn aqua-gradient p-demo-4">Middle</button>
+          <button type="button" class="btn aqua-gradient p-demo-4">Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-12 mb-4">
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-indigo p-demo-1"><i class="fab fa-instagram fa-sm pr-2"
+              aria-hidden="true"></i>
+            Left</button>
+          <button type="button" class="btn btn-indigo p-demo-1"><i class="fab fa-twitter fa-sm pr-2"
+              aria-hidden="true"></i>Middle</button>
+          <button type="button" class="btn btn-indigo p-demo-1"><i class="fab fa-snapchat-ghost fa-sm pr-2"
+              aria-hidden="true"></i>Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-12">
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-outline-mdb-color waves-effect p-demo-0"><i class="fas fa-car fa-sm pr-2"
+              aria-hidden="true"></i> Left</button>
+          <button type="button" class="btn btn-outline-mdb-color waves-effect p-demo-0"><i
+              class="fas fa-plane fa-sm pr-2" aria-hidden="true"></i>Middle</button>
+          <button type="button" class="btn btn-outline-mdb-color waves-effect p-demo-0"><i
+              class="fas fa-train fa-sm pr-2" aria-hidden="true"></i>Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!--Section: Live preview-->
+
+  <!--Section: Code-->
+  <section>
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_0c026021f2826785a646503dad6d9edf" role="tab">HTML</a></li><li class="nav-item"><a class="nav-link " data-toggle="tab" href="#mdb_5f50090de8c92a9b7ffda3749dc840f3" role="tab">CSS</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_0c026021f2826785a646503dad6d9edf" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+
+        &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-cyan&quot;&gt;Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-cyan&quot;&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-cyan&quot;&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn aqua-gradient&quot;&gt;Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn aqua-gradient&quot;&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn aqua-gradient&quot;&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-indigo&quot;&gt;&lt;i class=&quot;fab fa-instagram fa-sm pr-2&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+            Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-indigo&quot;&gt;&lt;i class=&quot;fab fa-twitter fa-sm pr-2&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-indigo&quot;&gt;&lt;i class=&quot;fab fa-snapchat-ghost fa-sm pr-2&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn-group&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-mdb-color waves-effect&quot;&gt;&lt;i class=&quot;fas fa-car fa-sm pr-2&quot;
+              aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-mdb-color waves-effect&quot;&gt;&lt;i class=&quot;fas fa-plane fa-sm pr-2&quot;
+              aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-mdb-color waves-effect&quot;&gt;&lt;i class=&quot;fas fa-train fa-sm pr-2&quot;
+              aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+
+      </pre></code></div><div class="tab-pane fade " id="mdb_5f50090de8c92a9b7ffda3749dc840f3" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-css" ><code>
+
+        .btn .fa.fa-sm {
+        font-size: 1rem;
+        margin-top: -5px;
+        }
+
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+  </section>
+  <!--Section: Code-->
+
+</section>
+<!--/Section: -->
+
+<hr class="mt-4 mb-5">
+
+<!--Section: -->
+<section id="multicolor">
+
+  <!--Title-->
+  <h2 class="section-heading mb-4">
+    Multicolored button group
+  </h2>
+
+  <!-- Description -->
+  <p>
+  </p>
+
+  <!--Section: Live preview-->
+  <section class="section-preview">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-xl-5 col-md-6 mb-xl-0 mb-4">
+
+        <div class="btn-group btn-group-lg mb-4" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary btn-lg p-demo-3">Left</button>
+          <button type="button" class="btn btn-warning btn-lg p-demo-3">Middle</button>
+          <button type="button" class="btn btn-danger btn-lg p-demo-3">Right</button>
+        </div>
+        <div class="btn-group mb-4" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary p-demo-3">Left</button>
+          <button type="button" class="btn btn-warning p-demo-3">Middle</button>
+          <button type="button" class="btn btn-danger p-demo-3">Right</button>
+        </div>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary btn-sm p-demo-3">Left</button>
+          <button type="button" class="btn btn-warning btn-sm p-demo-3">Middle</button>
+          <button type="button" class="btn btn-danger btn-sm p-demo-3">Right</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+
+    <!-- Grid row -->
+    <div class="row my-2">
+      <!-- Grid column -->
+      <div class="col-xl-2 col-md-12 mb-xl-0 mb-4">
+
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+          <button type="button" class="btn btn-primary mb-0">Button</button>
+          <button type="button" class="btn btn-pink mb-0">Button</button>
+          <button type="button" class="btn btn-success mb-0">Button</button>
+          <button type="button" class="btn btn-amber mb-0">Button</button>
+          <button type="button" class="btn btn-red">Button</button>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-xl-5 col-md-12">
+
+        <div class="btn-toolbar mb-4" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group mr-0" role="group" aria-label="First group">
+            <button type="button" class="btn mdb-color lighten-2 p-demo-3 waves-effect waves-light">1</button>
+            <button type="button" class="btn indigo lighten-2 p-demo-3 waves-effect waves-light">2</button>
+            <button type="button" class="btn blue lighten-2 p-demo-3 waves-effect waves-light">3</button>
+            <button type="button" class="btn light-blue lighten-2 p-demo-3 waves-effect waves-light">4</button>
+            <button type="button" class="btn cyan lighten-2 p-demo-3 waves-effect waves-light">5</button>
+          </div>
+        </div>
+
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group mr-0" role="group" aria-label="First group">
+            <button type="button" class="btn indigo lighten-2 p-demo-3 waves-effect waves-light"><i class="fas fa-star"
+                aria-hidden="true"></i></button>
+            <button type="button" class="btn blue lighten-2 p-demo-3 waves-effect waves-light"><i class="fas fa-heart"
+                aria-hidden="true"></i></button>
+            <button type="button" class="btn light-blue lighten-2 p-demo-3 waves-effect waves-light"><i
+                class="fas fa-user" aria-hidden="true"></i></button>
+            <button type="button" class="btn cyan lighten-2 p-demo-3 waves-effect waves-light"><i class="fab fa-twitter"
+                aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!--Section: Live preview-->
+
+  <!--Section: Code-->
+  <section>
+    <!-- mdbsnippet --><div class="docs-pills">  <div class="d-flex justify-content-between">    <ul class="nav md-pills pills-grey"><li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#mdb_d76c8cd6dc71e493e9591bfdbb01c921" role="tab">HTML</a></li></ul></div><div class="tab-content"><div class="tab-pane fade active show" id="mdb_d76c8cd6dc71e493e9591bfdbb01c921" role="tabpanel"><pre class="grey lighten-3 px-3 mb-0 line-numbers language-html" ><code>
+
+        &lt;div class=&quot;btn-group btn-group-lg mb-4&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-warning btn-lg&quot;&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn-group mb-4&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn-group btn-group-sm&quot; role=&quot;group&quot; aria-label=&quot;Basic example&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Left&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-warning btn-sm&quot;&gt;Middle&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-sm&quot;&gt;Right&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;btn-group-vertical&quot; role=&quot;group&quot; aria-label=&quot;Vertical button group&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-primary ml-0&quot;&gt;Button&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-pink&quot;&gt;Button&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Button&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-amber&quot;&gt;Button&lt;/button&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-red&quot;&gt;Button&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;btn-toolbar mb-4&quot; role=&quot;toolbar&quot; aria-label=&quot;Toolbar with button groups&quot;&gt;
+          &lt;div class=&quot;btn-group mr-2&quot; role=&quot;group&quot; aria-label=&quot;First group&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn mdb-color lighten-2&quot;&gt;1&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn indigo lighten-2&quot;&gt;2&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn blue lighten-2&quot;&gt;3&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn light-blue lighten-2&quot;&gt;4&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn cyan lighten-2&quot;&gt;5&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;btn-toolbar&quot; role=&quot;toolbar&quot; aria-label=&quot;Toolbar with button groups&quot;&gt;
+          &lt;div class=&quot;btn-group mr-2&quot; role=&quot;group&quot; aria-label=&quot;First group&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn indigo lighten-2&quot;&gt;&lt;i class=&quot;fas fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn blue lighten-2&quot;&gt;&lt;i class=&quot;fas fa-heart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn light-blue lighten-2&quot;&gt;&lt;i class=&quot;fas fa-user&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn cyan lighten-2&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      </pre></code></div></div></div><!-- /.mdbsnippet -->
+  </section>
+  <!--Section: Code-->
+
+</section>
+<!--/Section: -->                          </section>
+                          <!--Section: Docs content-->
+                        </div>
+                        <!--Grid column: Content-->
 
 <div w3-include-html="https://yayanheeh.github.io/garangan-bootstrap/footer.html"></div> 
 
